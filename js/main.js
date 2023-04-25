@@ -1,3 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Pàgina carregada correctament');
-});
+function onPageLoad() {
+    console.log('Página cargada correctamente');
+  }
+  
+  document.addEventListener('DOMContentLoaded', onPageLoad);
+  
