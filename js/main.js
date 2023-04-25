@@ -3,4 +3,3 @@ function onPageLoad() {
   }
   
   document.addEventListener('DOMContentLoaded', onPageLoad);
-  
