@@ -1,0 +1,95 @@
+/* Reseteja alguns estils predeterminats del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estils del header i la navegació */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estils de les seccions principals */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estils de la secció de serveis */
+.services article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.services img {
+    max-width: 150px;
+    margin-right: 1rem;
+}
+
+/* Estils de la secció de testimonis */
+.testimonials blockquote {
+    border-left: 4px solid #333;
+    padding-left: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonials cite {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Estils del footer */
+footer {
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Media query per a pantalles petites */
+@media screen and (max-width: 576px) {
+    .services article {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .services img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
