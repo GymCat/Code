@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Pàgina carregada sense errors');
+    console.log('Pàgina carregada correctament');
 });
