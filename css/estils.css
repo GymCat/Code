@@ -78,7 +78,7 @@ footer {
     color: #fff;
 }
 
-/* Media query per a pantalles petites */
+/* query */
 @media screen and (max-width: 576px) {
     .services article {
         flex-direction: column;

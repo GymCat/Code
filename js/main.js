@@ -1,5 +1,5 @@
 function onPageLoad() {
-    console.log('Página cargada correctamente');
+    console.log('Pàgina carregada correctament');
   }
   
   document.addEventListener('DOMContentLoaded', onPageLoad);
