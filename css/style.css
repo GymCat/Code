@@ -56,11 +56,14 @@ nav ul li a:hover {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .class img, .staff-member img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 main {
@@ -77,12 +80,8 @@ main {
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .info {
@@ -124,6 +123,12 @@ main {
     background-color: #555;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .gallery img {
     width: calc(33% - 10px);
     height: auto;
@@ -146,13 +151,19 @@ footer {
     header {
         flex-direction: column;
     }
-
     nav ul {
         flex-direction: column;
     }
-
+    
     nav ul li {
         margin-bottom: 5px;
     }
-
-}
+    
+    .class, .staff-member, .contact-info {
+        width: calc(100% - 20px);
+    }
+    
+    .gallery img {
+        width: calc(100% - 10px);
+    }
+}    
