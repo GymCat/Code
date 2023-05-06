@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.class, .staff-member, .contact-info {
+    width: calc(33% - 20px);
+    margin: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.class img, .staff-member img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.info {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    margin-top: 10px;
+}
+
+.contact input, .contact textarea {
+    margin-top: 5px;
+}
+
+.contact button {
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: calc(33% - 10px);
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-address {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+}
