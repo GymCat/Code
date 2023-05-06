@@ -7,4 +7,3 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("El teu missatge ha estat enviat! (Demostració)");
         });
     }
-});
