@@ -124,12 +124,6 @@ main {
     background-color: #555;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 .gallery img {
     width: calc(33% - 10px);
     height: auto;
