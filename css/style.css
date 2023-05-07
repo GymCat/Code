@@ -49,7 +49,9 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 
-.class, .staff-member, .contact-info {
+.class,
+.staff-member,
+.contact-info {
     width: calc(33% - 20px);
     margin: 10px;
     background-color: #f2f2f2;
@@ -60,7 +62,8 @@ nav ul li a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.class img, .staff-member img {
+.class img,
+.staff-member img {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -105,7 +108,8 @@ main {
     margin-top: 10px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     margin-top: 5px;
 }
 
@@ -147,23 +151,78 @@ footer {
     margin-top: 5px;
 }
 
-@media screen and (max-width: 576px) {
-    header {
-        flex-direction: column;
+/* Afegit: Responsivitat per a pantalles més grans */
+@media screen and (min-width: 1024px) {
+    .info-container {
+        max-width: 1200px;
+        margin: 0 auto;
     }
+}
+
+/* Afegit: Responsivitat per a dispositius mòbils i tauletes */
+@media screen and (max-width: 767px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class,
+    .staff-member,
+    .contact-info {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     nav ul {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
-    nav ul li {
-        margin-bottom: 5px;
+
+    .mobile-nav button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 10px;
     }
-    
-    .class, .staff-member, .contact-info {
-        width: calc(100% - 20px);
+
+    .mobile-nav button:hover {
+        background-color: #555;
     }
-    
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .mobile-nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    .mobile-nav ul li a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
+
     .gallery img {
-        width: calc(100% - 10px);
+        width: calc(50% - 5px);
     }
-}    
+}
