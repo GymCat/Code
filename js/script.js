@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       container.appendChild(boto);
     }
   
-    // Carreguem les classes del fitxer XML
-    if (document.querySelector(".info-container")) {
+    // Carreguem les classes del fitxer XML només si estem a la pàgina "classes.html"
+    if (window.location.href.includes("classes.html") && document.querySelector(".info-container")) {
       fetch("XML/classes.xml")
         .then((response) => response.text())
         .then((xmlText) => {
@@ -42,4 +42,4 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch((error) => console.error("Error carregant les dades de les classes:", error));
     }
-  });
+});
