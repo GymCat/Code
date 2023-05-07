@@ -151,7 +151,6 @@ footer {
     margin-top: 5px;
 }
 
-/* Afegit: Responsivitat per a pantalles més grans */
 @media screen and (min-width: 1024px) {
     .info-container {
         max-width: 1200px;
@@ -159,7 +158,6 @@ footer {
     }
 }
 
-/* Afegit: Responsivitat per a dispositius mòbils i tauletes */
 @media screen and (max-width: 767px) {
     .info-container {
         flex-direction: column;
@@ -225,4 +223,22 @@ footer {
     .gallery img {
         width: calc(50% - 5px);
     }
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+}
+
+nav {
+    text-align: right;
 }
