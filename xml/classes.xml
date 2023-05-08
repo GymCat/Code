@@ -2,17 +2,17 @@
 <classes>
     <class>
         <name>Yoga</name>
-        <description>Connecta cos i ment en les nostres classes de yoga, millorant la teva flexibilitat i equilibri.</description>
-        <image>img/yoga.jpg</image>
+        <description>Connecta amb el cos i ment en les nostres classes de yoga, millorant la teva flexibilitat i equilibri.</description>
+        <image>img/gym/yoga.jpg</image>
     </class>
     <class>
         <name>Pilates</name>
-        <description>Fortaletgeix el teu nucli i augmenta la teva estabilitat en les nostres classes de pilates.</description>
-        <image>img/pilates.jpg</image>
+        <description>Fortaleix el teu nucli i augmenta la teva estabilitat en les nostres classes de pilates.</description>
+        <image>img/gym/pilates.jpg</image>
     </class>
     <class>
         <name>Spinning</name>
-        <description>Posa a prova la teva resistència en les nostres emocionants classes de spinning, on podràs cremar calories i enfortir les teves cames.</description>
-        <image>img/spinning.jpg</image>
+        <description>Posa a prova la teva resistència en les nostres emocionants classes de spinning, on podràs cremar calories i enfortir les teves cames en les .</description>
+        <image>img/gym/spinning.jpg</image>
     </class>
 </classes>
